@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MERIDIAN — Clothes that keep up with you</title>
+<title>LifeStyle BD Shop — Clothes that keep up with you</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -98,8 +98,11 @@
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.02em;
+    display:flex; align-items:center;
   }
   .logo span{ color: var(--brass); }
+  .logo-img{ height: 38px; width:auto; display:block; }
+  .footer-brand .logo-img{ height: 42px; }
   .nav-links{ display:flex; gap: 32px; }
   .nav-links a{
     font-size: 14px; font-weight: 500;
@@ -329,6 +332,10 @@
     content:''; position:absolute; inset:0;
     background: repeating-linear-gradient(60deg, rgba(255,255,255,0.06) 0 3px, transparent 3px 11px);
   }
+  .product-image:has(img)::after{ display:none; }
+  .product-image img{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
   .p1{ background: linear-gradient(160deg,#D7C9A8,#B8893E); }
   .p2{ background: linear-gradient(160deg,#6B7264,#2C3A36); }
   .p3{ background: linear-gradient(160deg,#C2604F,#9C3B2E); }
@@ -452,7 +459,7 @@
   <!-- ============ HEADER ============ -->
   <header>
     <div class="wrap nav-row">
-      <a href="#" class="logo">MERIDIAN<span>.</span></a>
+      <a href="#" class="logo"><img src="images/logo-dark.png" alt="LifeStyle BD Shop" class="logo-img"></a>
 
       <nav class="nav-links" id="navLinks">
         <a href="#categories">Women</a>
@@ -595,34 +602,34 @@
       </div>
       <div class="product-grid">
         <div class="product-card">
-          <div class="product-image p1"><div class="quick-add">+ Quick add</div></div>
-          <h4>Essential Cotton Tee</h4>
-          <p class="price">$28.00</p>
+          <div class="product-image p1"><img src="images/product-1.jpg" alt="Ribbed Knit Bomber Cardigan" loading="lazy"><div class="quick-add">+ Quick add</div></div>
+          <h4>Ribbed Knit Bomber Cardigan</h4>
+          <p class="price">Tk 650</p>
         </div>
         <div class="product-card">
-          <div class="product-image p2"><div class="quick-add">+ Quick add</div></div>
-          <h4>Tailored Wide-Leg Trouser</h4>
-          <p class="price">$68.00</p>
+          <div class="product-image p2"><img src="images/product-2.jpg" alt="Oversized Print Tee" loading="lazy"><div class="quick-add">+ Quick add</div></div>
+          <h4>Oversized Print Tee</h4>
+          <p class="price">Tk 480</p>
         </div>
         <div class="product-card">
-          <div class="product-image p3"><div class="quick-add">+ Quick add</div></div>
-          <h4>Relaxed Denim Jacket</h4>
-          <p class="price"><span class="was">$98.00</span><span class="sale">$72.00</span></p>
+          <div class="product-image p3"><img src="images/product-3.jpg" alt="Hooded Overshirt Combo" loading="lazy"><div class="quick-add">+ Quick add</div></div>
+          <h4>Hooded Overshirt Combo</h4>
+          <p class="price">Tk 700</p>
         </div>
         <div class="product-card">
-          <div class="product-image p4"><div class="quick-add">+ Quick add</div></div>
-          <h4>Everyday Crewneck</h4>
-          <p class="price">$45.00</p>
+          <div class="product-image p4"><img src="images/product-4.jpg" alt="Fleece Jogger Set" loading="lazy"><div class="quick-add">+ Quick add</div></div>
+          <h4>Fleece Jogger Set</h4>
+          <p class="price">Tk 600</p>
         </div>
         <div class="product-card">
-          <div class="product-image p5"><div class="quick-add">+ Quick add</div></div>
-          <h4>Pleated Midi Skirt</h4>
-          <p class="price">$58.00</p>
+          <div class="product-image p5"><img src="images/product-5.jpg" alt="Checked Casual Shirt" loading="lazy"><div class="quick-add">+ Quick add</div></div>
+          <h4>Checked Casual Shirt</h4>
+          <p class="price">Tk 520</p>
         </div>
         <div class="product-card">
-          <div class="product-image p6"><div class="quick-add">+ Quick add</div></div>
-          <h4>Classic Oxford Shirt</h4>
-          <p class="price">$52.00</p>
+          <div class="product-image p6"><img src="images/product-6.jpg" alt="Essential Tee &amp; Denim Set" loading="lazy"><div class="quick-add">+ Quick add</div></div>
+          <h4>Essential Tee &amp; Denim Set</h4>
+          <p class="price">Tk 450</p>
         </div>
       </div>
     </section>
@@ -633,7 +640,7 @@
         <div class="editorial-art"></div>
         <div>
           <blockquote>"We make clothes for the version of you that shows up — not the one you're performing for."</blockquote>
-          <cite>— MERIDIAN Design Team</cite>
+          <cite>— LifeStyle BD Shop Team</cite>
         </div>
       </div>
     </section>
@@ -657,8 +664,8 @@
   <footer>
     <div class="wrap footer-grid">
       <div class="footer-brand">
-        <a href="#" class="logo">MERIDIAN<span>.</span></a>
-        <p>Considered clothing for everyday life — designed in small batches, built to last past one season.</p>
+        <a href="#" class="logo"><img src="images/logo-light.png" alt="LifeStyle BD Shop" class="logo-img"></a>
+        <p>Everyday menswear staples, picked for fit and comfort first — built for life in Dhaka and beyond.</p>
         <div class="social-row">
           <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
           <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.6 2.2 2 3.6 4 4"/></svg></a>
@@ -688,7 +695,7 @@
       </div>
     </div>
     <div class="wrap footer-bottom">
-      <p>© 2026 Meridian. All rights reserved.</p>
+      <p>© 2026 LifeStyle BD Shop. All rights reserved.</p>
       <div class="legal-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
